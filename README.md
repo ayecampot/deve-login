@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 First to have avaiable the script you have to run in the project directory
-npm install react-scripts
+### `npm install react-scripts`
 
 ## Available Scripts
 
