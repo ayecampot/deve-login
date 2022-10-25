@@ -1,9 +1,18 @@
+# Para levantar el proyecto
+Luego de clonarlo en tu local es necesario poner el siguiente comando parado en el directorio:
+### `npm start`
+
+Luego para inicializarlo de forma local poner el siguiente comando parado en el directorio:
+### `npm start`
+
+-----------------------------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-First to have avaiable the script you have to run in the project directory
-### `npm install react-scripts`
+First to have avaiable de folder node_modules in yout local, you have to run in the project directory
+### `npm install`
 
 ## Available Scripts
 
