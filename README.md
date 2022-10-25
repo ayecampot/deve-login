@@ -1,6 +1,6 @@
 # Para levantar el proyecto
 Luego de clonarlo en tu local es necesario poner el siguiente comando parado en el directorio:
-### `npm start`
+### `npm install`
 
 Luego para inicializarlo de forma local poner el siguiente comando parado en el directorio:
 ### `npm start`
