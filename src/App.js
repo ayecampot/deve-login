@@ -20,7 +20,7 @@ const App = () => {
       <main>
         <div class="grid">
           <section class="img-section">
-            <img src={paisaje} alt="" />
+            <img src={paisaje} alt="paisaje de montañas" />
           </section>
           { logged ? <Welcome usr={usr}/> : <Login usr={usr} setUsr={writeUsr} log={log}/> }
         </div>
