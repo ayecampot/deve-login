@@ -136,7 +136,8 @@ form {
   background-color: #0445C3;
   height: 50px;
   width: 347px;
-  border-radius: 5px;  
+  border-radius: 5px; 
+ margin-top: 12rem ; 
   transition: all 0.2s ease-in-out;
 }
 
@@ -145,6 +146,7 @@ form {
   background-color: #3546b8;
   border-width: 0px;
   transform: scale(0.9);
+ 
 }
 
 .flex-google {
@@ -174,7 +176,7 @@ font-size: 30px;
 font-weight: 700;
 line-height: 35px;
 letter-spacing: 0em;
-text-align: center;
+text-align: center;;
 
 }
 
@@ -322,6 +324,7 @@ input::value{
 }
 
 .welcome {
+  margin-top: 9rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;

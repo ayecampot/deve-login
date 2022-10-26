@@ -2,28 +2,29 @@ import google from '../images/google.svg';
 import React, { useState } from "react";
  
  
-const Login = ({usr, setUsr, log}) => {
+const Login = ({ setUsr }) => {
   const [invalid, setInvalid] = useState(false);
+  const [email, setEmail] = useState();
  
   const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
+ 
+  const writeUsr = (e) => setEmail(e.target.value)
  
   const afterSubmission = (e) => {
     e.preventDefault();
     if (e.key && e.key !== "Enter") return;
  
-    const valid = isValidEmail(usr)
-    setInvalid(!valid)
- 
-    log(valid)
+    if (isValidEmail(email)) {
+      setUsr(email)
+    } else {
+      setInvalid(true)
+    }
   }
- 
-  const showInvalidEmail = () =>
-  usr && invalid && (<p className="input-invalid mt">*Mail inválido</p>)
  
   return (
     <section class="login">
       <div class="login-form">
-        <form  onSubmit = {afterSubmission}>
+        <form onSubmit={afterSubmission}>
           <p>Welcome back</p>
           <h1 class="h1">Login to your account</h1>
           <div>
@@ -36,12 +37,12 @@ const Login = ({usr, setUsr, log}) => {
                 placeholder="Email"
                 tabindex="1"
                 required
-                value={usr}
-                onChange={setUsr}
+                value={email}
+                onChange={writeUsr}
               />
             </label>
  
-            {showInvalidEmail()}
+            {invalid && (<p className="input-invalid mt">*Mail inválido</p>)}
  
             <p class="input-name mt">Password</p>
             <label class="label-password">
@@ -73,7 +74,7 @@ const Login = ({usr, setUsr, log}) => {
           </button>
           <button type="button" class="btn btn-google">
             <div class="flex-google">
-            <img class="google-svg" src={google} alt="logo de google en el boton" />
+              <img class="google-svg" src={google} alt="logo de google en el boton" />
               <span class="ml-1"> Or sign-in with Google</span>
             </div>
           </button>
