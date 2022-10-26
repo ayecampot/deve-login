@@ -4,7 +4,7 @@ import Login from './components/Login';
 import Welcome from './components/Welcome';
  
 import React, { useState } from "react";
-import paisaje from './images/image.png';
+import paisaje from './images/image2.png';
  
 const App = () => {
  
