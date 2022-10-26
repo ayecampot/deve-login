@@ -69,7 +69,7 @@ const Login = ({usr, setUsr, log}) => {
           <button
             type="submit"
             class="btn btn-login">
-            Login Now
+            Login now
           </button>
           <button type="button" class="btn btn-google">
             <div class="flex-google">
