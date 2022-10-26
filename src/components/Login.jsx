@@ -74,7 +74,7 @@ const Login = ({usr, setUsr, log}) => {
           <button type="button" class="btn btn-google">
             <div class="flex-google">
             <img class="google-svg" src={google} alt="logo de google en el boton" />
-              <span class="ml-1"> Log in with Google</span>
+              <span class="ml-1"> Or sign-in with Google</span>
             </div>
           </button>
         </form>
