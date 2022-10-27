@@ -137,6 +137,7 @@ form {
   border-radius: 5px;
   margin-top: 12rem;
   transition: all 0.2s ease-in-out;
+  margin-bottom: 2rem;
 }
 
 .btn-dashboard:hover {
@@ -208,6 +209,7 @@ form {
   text-align: left;
   color: #2c5282;
   margin-top: 3px;
+
 }
 
 .input-p {
@@ -218,6 +220,7 @@ form {
   text-align: left;
   color: #2d3748;
   margin-top: 3px;
+
 }
 
 .input-a-2 {
@@ -228,6 +231,7 @@ form {
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 1rem;
 }
 
 .input-p-2 {
@@ -339,4 +343,9 @@ input::value {
   .m-mobile {
     margin-top: 2rem;
   }
+  .input-p-2, .input-a-2, .btn-dashboard {
+  margin-bottom: 2rem;
+  
+  }
+  
 }
