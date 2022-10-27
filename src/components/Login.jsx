@@ -8,23 +8,28 @@ const Login = ({ setUsr }) => {
  
   const isValidEmail = (email) => /\S+@\S+\.\S+/.test(email);
  
-  const writeUsr = (e) => setEmail(e.target.value)
- 
-  const afterSubmission = (e) => {
+  const writeEmail = (e) => {
+    const email = e.target.value
+    if (!email) {
+      setInvalid(false)
+    }
+    setEmail(email)
+  }
+
+  const submit = (e) => {
     e.preventDefault();
     if (e.key && e.key !== "Enter") return;
- 
+
     if (isValidEmail(email)) {
       setUsr(email)
     } else {
       setInvalid(true)
     }
   }
- 
   return (
     <section class="login">
       <div class="login-form">
-        <form onSubmit={afterSubmission}>
+        <form onSubmit={submit}>
           <p>Welcome back</p>
           <h1 class="h1">Login to your account</h1>
           <div>
@@ -38,7 +43,7 @@ const Login = ({ setUsr }) => {
                 tabindex="1"
                 required
                 value={email}
-                onChange={writeUsr}
+                onChange={writeEmail}
               />
             </label>
  
