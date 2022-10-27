@@ -28,7 +28,7 @@ body {
 
 .img-section img {
   max-width: 100%;
- height: 100vh;
+  height: auto;
   display: block;
   overflow-y: hidden;
 }
@@ -76,7 +76,6 @@ form {
   justify-content: space-between;
 }
 
-
 /* Botones */
 
 .btn {
@@ -84,7 +83,7 @@ form {
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
-  letter-spacing: 0em; 
+  letter-spacing: 0em;
   margin-top: 2rem;
   height: 3rem;
   height: 50px;
@@ -96,8 +95,8 @@ form {
 }
 
 .btn-login {
-  border-color: #04C35C;
-  background-color: #04C35C;
+  border-color: #04c35c;
+  background-color: #04c35c;
   font-size: 16px;
   font-weight: 700;
   line-height: 19px;
@@ -121,7 +120,6 @@ form {
   top: 619px;
   border-radius: 0px;
   transition: all 0.2s ease-in-out;
-
 }
 
 .btn-google:hover {
@@ -132,12 +130,12 @@ form {
 }
 
 .btn-dashboard {
-  border-color: #0445C3;
-  background-color: #0445C3;
+  border-color: #0445c3;
+  background-color: #0445c3;
   height: 50px;
   width: 347px;
-  border-radius: 5px; 
- margin-top: 12rem ; 
+  border-radius: 5px;
+  margin-top: 12rem;
   transition: all 0.2s ease-in-out;
 }
 
@@ -146,7 +144,6 @@ form {
   background-color: #3546b8;
   border-width: 0px;
   transform: scale(0.9);
- 
 }
 
 .flex-google {
@@ -172,12 +169,11 @@ form {
 }
 
 .h2 {
-font-size: 30px;
-font-weight: 700;
-line-height: 35px;
-letter-spacing: 0em;
-text-align: center;;
-
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0em;
+  text-align: center;
 }
 
 .input-name {
@@ -204,7 +200,7 @@ text-align: center;;
 }
 
 .input-a {
-  text-decoration:none;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -225,7 +221,7 @@ text-align: center;;
 }
 
 .input-a-2 {
-  text-decoration:none;
+  text-decoration: none;
   color: #2b6cb0;
   font-size: 16px;
   font-weight: 400;
@@ -242,7 +238,6 @@ text-align: center;;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  
 }
 
 .radio {
@@ -319,8 +314,8 @@ input::placeholder {
   color: #2d3748;
 }
 
-input::value{
- padding-left: 10px;
+input::value {
+  padding-left: 10px;
 }
 
 .welcome {
